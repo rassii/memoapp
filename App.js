@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native';
 
 import Appbar from './src/components/Appbar';
 import MemoListScreen from './src/screens/MemoListScreen';
+import MemoDetailScreen from './src/screens/MemoDetailScreen';
 
 export default class App extends React.Component {
   render() {
@@ -10,8 +11,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
 
         <Appbar />
-
-        <MemoListScreen />
+        <MemoDetailScreen />
 
       </View>
     );
@@ -24,6 +24,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFDF6',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 72,
+    paddingTop: 70,
   },
 });

@@ -3,8 +3,9 @@ import { StyleSheet, Text, View } from 'react-native';
 
 class CircleButton extends React.Component {
   render() {
+    const { style } = this.props;
     return (
-      <View style={styles.CircleButton}>
+      <View style={[styles.CircleButton, style]}>
         <Text style={styles.CircleButtonTitle}>
           {this.props.children}
         </Text>
