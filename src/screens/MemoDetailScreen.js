@@ -20,7 +20,7 @@ class MemoDetailScreen extends React.Component {
           </Text>
         </View>
 
-        <CircleButton style={styles.editButton}>+</CircleButton>
+        <CircleButton name="pencil" color="white" style={styles.editButton} />
       </View>
     );
   }
@@ -35,11 +35,13 @@ const styles = StyleSheet.create({
     height: 100,
     backgroundColor: '#17313C',
     justifyContent: 'center',
+    padding: 10,
   },
   memoHeaderTitle: {
     fontSize: 20,
     fontWeight: 'bold',
     color: '#fff',
+    marginBottom: 4,
   },
   memoHeaderDate: {
     fontSize: 12,
