@@ -1,17 +1,17 @@
 import React from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableHighlight } from 'react-native';
 
-class LoginScreen extends React.Component {
+class SignupScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>
-          ログイン
+          メンバー登録
         </Text>
         <TextInput style={styles.input} value="Email Adress" />
         <TextInput style={styles.input} value="Password" />
         <TouchableHighlight style={styles.button} underlayColor="#C70F66" onPress={() => { this.props.navigation.navigate('Home'); }}>
-          <Text style={styles.buttonTitle}>ログインする</Text>
+          <Text style={styles.buttonTitle}>送信する</Text>
         </TouchableHighlight>
       </View>
     );
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     height: 48,
     marginBottom: 16,
     borderWidth: 1,
-    borderColor: '#DDD',
+    borderColor: '#fff',
     padding: 8,
   },
   title: {
@@ -44,8 +44,6 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     justifyContent: 'center',
     alignItems: 'center',
-    width: '70%',
-    alignSelf: 'center',
   },
   buttonTitle: {
     color: '#fff',
@@ -53,4 +51,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginScreen;
+export default SignupScreen;

@@ -7,13 +7,15 @@ import MemoEditScreen from './src/screens/MemoEditScreen';
 import LoginScreen from './src/screens/LoginScreen';
 
 const App = createStackNavigator({
+  Login: { screen: LoginScreen },
   Home: { screen: MemoListScreen },
   MemoDetail: { screen: MemoDetailScreen },
   MemoEdit: { screen: MemoEditScreen },
-  Login: { screen: LoginScreen },
 }, {
   defaultNavigationOptions: {
     headerTitle: 'Memot',
+    headerTintColor: '#fff',
+    headerBackTitle: null,
     headerStyle: {
       backgroundColor: '#265366',
     },
